@@ -48,9 +48,21 @@ ul{
     
 }
 
+.libtn{
+    display: flex;
+}
+
 li{
     border-style: groove;
     margin-top: 5px;
     font-size: 1.1rem;
     border-radius: 8px;
+    width: 90%;
+    
+}
+
+.btn{
+    border-radius: 8px;
+    margin-left: 1%;
+    
 }
