@@ -37,3 +37,20 @@
     font-size: 1.1rem;
     border-radius: 8px;
 }
+
+ul{
+    list-style-type: none;
+    height: 220px;
+    overflow: auto;
+    padding-right: 8%;
+    padding-top: 2%;
+    
+    
+}
+
+li{
+    border-style: groove;
+    margin-top: 5px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+}
