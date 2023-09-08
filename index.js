@@ -12,10 +12,10 @@ function onClick(evt){
     newLi.innerText = notetxt.value;
     newDiv.appendChild(newLi);
 
-    const deleteBtn = document.createElement("input");
-    deleteBtn.setAttribute("type", "button");
+    const deleteBtn = document.createElement("button");
     deleteBtn.setAttribute("class","btn");
-    deleteBtn.setAttribute("value", "delete");
+    deleteBtn.innerHTML = "<img src='./icons/removeIcon.ico' >";
+
     newDiv.appendChild(deleteBtn).addEventListener("click", removeItem);
 
     notesLst.appendChild(newDiv);
