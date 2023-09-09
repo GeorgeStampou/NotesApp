@@ -23,6 +23,7 @@ function onClick(evt){
     form.reset();
 }
 
+
 function removeItem(){
     this.parentNode.remove();
 }
