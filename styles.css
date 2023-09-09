@@ -57,7 +57,7 @@ ul{
     display: flex;
 }
 
-li{
+li, .libtn>input{
     border-style: groove;
     margin-top: 5px;
     font-size: 1.1rem;
