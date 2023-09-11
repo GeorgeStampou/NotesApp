@@ -6,30 +6,32 @@ const notesLst = document.getElementById("notesList");
     user gave, and the buttons delete and edit. at the end resets the form so the input is empty. 
 */
 function onClick(event){
+    
     event.preventDefault();
 
     let newDiv = document.createElement("div");
     newDiv.setAttribute("class","libtn");
-    
-    
+      
     let newLi = createLi(notetxt.value);
     newDiv.appendChild(newLi);
 
     const editBtn = document.createElement("button");
     editBtn.setAttribute("class", "btn");
     editBtn.innerHTML = "<img src='./icons/editIcon.ico' >";
-    newDiv.appendChild(editBtn).addEventListener("click", editItem);
+    editBtn.addEventListener("click", editItem);
+    newDiv.appendChild(editBtn);
 
     const deleteBtn = document.createElement("button");
     deleteBtn.setAttribute("class","btn");
     deleteBtn.innerHTML = "<img src='./icons/removeIcon.ico' >";
 
     newDiv.appendChild(deleteBtn).addEventListener("click", removeItem);
-
     notesLst.appendChild(newDiv);
     
     form.reset();
 }
+
+form.addEventListener("submit", onClick);
 
 
 /* removes the div which has the li element with the buttons*/
@@ -44,7 +46,7 @@ function removeItem(){
 */
 
 function editItem(event){
-    
+
     let item = event.target.parentNode.parentNode.firstChild.innerHTML;
     console.log(item);
     let itemInput = document.createElement("input");
@@ -78,5 +80,3 @@ function createLi(value){
     return li;
 
 }
-
-form.addEventListener("submit", onClick);

@@ -1,5 +1,5 @@
 *{
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .container{
@@ -19,7 +19,6 @@
     margin-bottom: auto;
     font-size: 1.6rem;
     font-weight: bold;
-
 }
 
 .notes{
@@ -41,6 +40,7 @@
     font-size: 1.1rem;
     border-radius: 8px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 ul{
@@ -49,27 +49,28 @@ ul{
     overflow: auto;
     padding-right: 8%;
     padding-top: 2%;
-    
-    
 }
 
 .libtn{
     display: flex;
+    margin-top: 1%;
 }
 
 li, .libtn>input{
     border-style: groove;
-    margin-top: 5px;
     font-size: 1.1rem;
     border-radius: 8px;
     width: 90%;
     overflow-x: auto;
     font-weight: 600;
-    
+    display: flex;
+    align-items: center;
+    cursor: auto;
 }
 
 .btn{
-    border-radius: 8px;
+    border-radius: 8px; 
     margin-left: 1%;
-    
+    padding: 0;
+    cursor: pointer;
 }
