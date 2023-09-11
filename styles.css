@@ -70,8 +70,8 @@ body{
 }
 
 #addBtn{
-    width: 29%;
-    overflow-x: auto;
+    width: 30%;
+    overflow: auto;
 }
 
 ul{
