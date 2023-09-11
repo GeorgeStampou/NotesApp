@@ -46,13 +46,14 @@ body{
 .addNote{
     text-align: center; 
     display: flex;
-    flex-direction: row;
-    column-gap: 2%; 
+    flex-direction: row; 
     justify-content: center;
     align-items: center;
     align-content: center;
+    width: 100%;
     
 }
+
 
 .noteControls{
     background-color: #f7e2bf;
@@ -60,9 +61,17 @@ body{
     border-radius: 8px;
     font-weight: 600;
     cursor: pointer;
-    overflow: auto;
     border: thin solid;
-    
+}
+
+#noteText{
+    width: 65%;
+    overflow: auto;
+}
+
+#addBtn{
+    width: 29%;
+    overflow-x: auto;
 }
 
 ul{
@@ -80,8 +89,7 @@ ul{
 }
 
 .libtnContainer>li, .libtnContainer>input{
-    border-style: solid;
-    border-width: thin;
+    border: thin solid;
     font-size: 1.1rem;
     border-radius: 8px;
     width: 90%;
