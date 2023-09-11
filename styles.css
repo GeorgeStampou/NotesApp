@@ -30,7 +30,8 @@ body{
 }
 
 .notes{
-    height: 230px;
+    /*height: 230px;*/
+    height: 76%;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -45,7 +46,8 @@ body{
     display: flex;
     flex-direction: row; 
     justify-content: center;
-    align-content: space-evenly;
+    align-items: center;
+    
 }
 
 .addControls{
