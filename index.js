@@ -10,20 +10,20 @@ function onClick(event){
     event.preventDefault();
 
     let newDiv = document.createElement("div");
-    newDiv.setAttribute("class","libtn");
+    newDiv.setAttribute("class","libtnContainer");
       
     let newLi = createLi(notetxt.value);
     newDiv.appendChild(newLi);
 
     const editBtn = document.createElement("button");
     editBtn.setAttribute("class", "btn");
-    editBtn.innerHTML = "<img src='./icons/editIcon.ico' >";
+    editBtn.innerHTML = "<img src='./icons/editIcon.ico' alt='edit icon'>";
     editBtn.addEventListener("click", editItem);
     newDiv.appendChild(editBtn);
 
     const deleteBtn = document.createElement("button");
     deleteBtn.setAttribute("class","btn");
-    deleteBtn.innerHTML = "<img src='./icons/removeIcon.ico' >";
+    deleteBtn.innerHTML = "<img src='./icons/removeIcon.ico' alt='remove icon' >";
 
     newDiv.appendChild(deleteBtn).addEventListener("click", removeItem);
     notesLst.appendChild(newDiv);
