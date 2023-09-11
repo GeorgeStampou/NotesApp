@@ -7,9 +7,9 @@ body{
 }
 
 .container{
-    /*background-color: #F8C471;*/
     background-color: #ca9d4e;
-    width: 80vmin;
+    width: 40%;
+    /*min-width: 400px;*/
     height: 300px;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -26,6 +26,7 @@ body{
     margin-bottom: auto;
     font-size: 1.6rem;
     font-weight: bold;
+    overflow: auto;
 }
 
 .notes{
@@ -40,7 +41,11 @@ body{
 }
 
 .addNote{
-    text-align: center;    
+    text-align: center; 
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-content: space-evenly;
 }
 
 .addControls{
@@ -49,20 +54,22 @@ body{
     border-radius: 8px;
     font-weight: 600;
     cursor: pointer;
+    overflow: auto;
+    
 }
 
 ul{
     list-style-type: none;
-    height: 220px;
+    height: 95%;
     overflow: auto;
-    padding-right: 8%;
+    padding-right: 5%;
+    padding-left: 5%;
     padding-top: 2%;
 }
 
 .libtnContainer{
     display: flex;
     margin-top: 1%;
-    
 }
 
 .libtnContainer>li, .libtnContainer>input{
