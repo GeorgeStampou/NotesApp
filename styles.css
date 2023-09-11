@@ -65,7 +65,7 @@ ul{
     
 }
 
-li, .libtnContainer>input{
+.libtnContainer>li, .libtnContainer>input{
     border-style: solid;
     border-width: thin;
     font-size: 1.1rem;

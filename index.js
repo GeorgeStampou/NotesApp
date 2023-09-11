@@ -9,8 +9,12 @@ function onClick(event){
     
     event.preventDefault();
 
+    let outli = createLi("");
+
+
     let newDiv = document.createElement("div");
     newDiv.setAttribute("class","libtnContainer");
+    outli.appendChild(newDiv)
       
     let newLi = createLi(notetxt.value);
     newDiv.appendChild(newLi);
@@ -26,7 +30,7 @@ function onClick(event){
     deleteBtn.innerHTML = "<img src='./icons/removeIcon.ico' alt='remove icon' >";
 
     newDiv.appendChild(deleteBtn).addEventListener("click", removeItem);
-    notesLst.appendChild(newDiv);
+    notesLst.appendChild(outli);
     
     form.reset();
 }
