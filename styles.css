@@ -10,7 +10,8 @@ body{
     background-color: #ca9d4e;
     width: 40%;
     /*min-width: 400px;*/
-    height: 300px;
+    height: 40%;
+    /*height: 300px;*/
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
