@@ -38,10 +38,7 @@ body{
 .notes{
     height: 77%;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1%;
-    margin-top: 0.5%;
+    margin: 0.5% auto 1% auto;
     background-color: #f7e2bf;
     border-radius: 8px;
 }
