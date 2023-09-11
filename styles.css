@@ -36,12 +36,12 @@ body{
 }
 
 .notes{
-    /*height: 230px;*/
     height: 77%;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1%;
+    margin-top: 0.5%;
     background-color: #f7e2bf;
     border-radius: 8px;
 }
