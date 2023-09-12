@@ -21,12 +21,14 @@ function onClick(event){
 
     const editBtn = document.createElement("button");
     editBtn.setAttribute("class", "btn");
+    editBtn.setAttribute("title", "Edit");
     editBtn.innerHTML = "<img src='./icons/editIcon.ico' alt='edit icon'>";
     editBtn.addEventListener("click", editItem);
     newDiv.appendChild(editBtn);
 
     const deleteBtn = document.createElement("button");
     deleteBtn.setAttribute("class","btn");
+    deleteBtn.setAttribute("title", "Delete");
     deleteBtn.innerHTML = "<img src='./icons/removeIcon.ico' alt='remove icon' >";
 
     newDiv.appendChild(deleteBtn).addEventListener("click", removeItem);
