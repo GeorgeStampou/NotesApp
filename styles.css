@@ -9,6 +9,10 @@
 
 body{
     background-image: url("./icons/notesBackground.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f6d193;
 }
 
 .container{

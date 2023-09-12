@@ -9,14 +9,14 @@ function onClick(event){
     
     event.preventDefault();
 
-    let outli = createLi("");
+    const outli = createLi("");
 
 
-    let newDiv = document.createElement("div");
+    const newDiv = document.createElement("div");
     newDiv.setAttribute("class","libtnContainer");
     outli.appendChild(newDiv)
       
-    let newLi = createLi(notetxt.value);
+    const newLi = createLi(notetxt.value);
     newDiv.appendChild(newLi);
 
     const editBtn = document.createElement("button");
@@ -38,7 +38,7 @@ function onClick(event){
 form.addEventListener("submit", onClick);
 
 
-/* removes the div which has the li element with the buttons*/
+/* removes the list item which has div wit the li element and the buttons*/
 function removeItem(){
     this.parentNode.remove();
 }
@@ -46,7 +46,7 @@ function removeItem(){
 
 /*
     saves the initial value to item. then creates a new input which replace the li and add two event listeners
-    for saving the new value. add at the parent node the new input element and removes the li.
+    for saving the new value. add at the parent parent node the new input element and removes the li.
 */
 
 function editItem(event){
@@ -67,7 +67,7 @@ function editItem(event){
 /*
     save the new value which typed at itemInput and by pressing "enter" or click. then calls the function which
     create li elements with the new value which the user has typed and replace the input type element (children[0])
-    with the new li element.*-
+    with the new li element.
 */
 function saveItem(event){
     let inputValue = event.target.value;
