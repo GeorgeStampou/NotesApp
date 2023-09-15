@@ -25,7 +25,7 @@ To use the Notes App locally, follow these steps:
 2. Open the project directory:
    
    ```bash
-   cd NotesApp
+   cd NotesApp-main
 3. Open the index.html file in your web browser.
 
 
