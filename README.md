@@ -39,4 +39,5 @@ To use the Notes App locally, follow these steps:
 6. To delete a note, click the delete button (bin icon).
 
 ## Screenshot
-![NotesApp](https://github.com/GeorgeStampou/NotesApp/assets/58564542/44182003-67e4-4c2e-9975-5184c429b23c)
+![image](https://github.com/GeorgeStampou/NotesApp/assets/58564542/5d33f3e6-0631-4bf4-a824-532c8639591a)
+
